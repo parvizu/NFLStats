@@ -1,0 +1,20 @@
+<template name="layout">
+	<div class='container'>
+		<header class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<a href="{{pathFor 'gamesList'}}" class="navbar-brand">NFL Play by Play Statistics</a>
+			</div>
+		</header>
+		<div class="main-menu">
+			<li>Show Games</li>
+			<li>Add Games</li>
+			<li>Review Game</li>
+		</div>
+		<div id="main">
+			{{> yield }}
+		</div>
+		<div id="details">
+		
+		</div>
+	</div>
+</template>
